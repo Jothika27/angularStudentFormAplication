@@ -32,7 +32,7 @@ export class StudentComponent implements OnInit {
   }
 
   addStudent() {
-    // alert(JSON.stringify(this.model));
+    alert(JSON.stringify(this.model));
     if (!this.model.id) {
       alert(JSON.stringify(this.model));
       this.studentService.createStudentService(this.model).subscribe((data) => {

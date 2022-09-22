@@ -3,6 +3,7 @@
   <h1 style="color:red">Student Form</h1>
 </div>
 <br />
+
 <form
   #f="ngForm"
   name="form"
@@ -137,8 +138,8 @@
       <td>{{ student.gender }}</td>
       <td>{{ student.qualification }}</td>
       <td>{{ student.language }}</td>
-      <td><button (click)="editBook(student.id)">edit</button></td>
-      <td><button (click)="deleteBook(student.id)">delete</button></td>
+      <td><button (click)="editStudent(student.id)">edit</button></td>
+      <td><button (click)="deleteStudent(student.id)">delete</button></td>
     </tr>
   </tbody>
 </table>
